@@ -1169,7 +1169,8 @@ function perform_step!(integrator, cache::FBDFConstantCache{max_order},
             terk *= abs(dt^(k))
         else
             for i in 2:(k + 1)
-                @views terk = @.. terk + fd_weights[i, k + 1] * u_history[:, i - 1]
+                hist = @views u_history[:, i - 1]
+                terk = @.. terk + fd_weights[i, k + 1] * hist
             end
             terk *= abs(dt^(k))
         end
