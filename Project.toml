@@ -1,7 +1,7 @@
 name = "OrdinaryDiffEq"
 uuid = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
-authors = ["Chris Rackauckas <accounts@chrisrackauckas.com>", "Yingbo Ma <mayingbo5@gmail.com>"]
 version = "6.89.0"
+authors = ["Chris Rackauckas <accounts@chrisrackauckas.com>", "Yingbo Ma <mayingbo5@gmail.com>"]
 
 [deps]
 ADTypes = "47edcb42-4c32-4615-8424-f2b9edc5f35b"
@@ -92,7 +92,7 @@ FunctionWrappersWrappers = "0.1"
 InteractiveUtils = "1.9"
 LineSearches = "7"
 LinearAlgebra = "1.9"
-LinearSolve = "2"
+LinearSolve = "2, 5"
 Logging = "1.9"
 MacroTools = "0.5"
 MuladdMacro = "0.2.1"
@@ -121,8 +121,8 @@ OrdinaryDiffEqQPRK = "1"
 OrdinaryDiffEqRKN = "1"
 OrdinaryDiffEqRosenbrock = "1"
 OrdinaryDiffEqSDIRK = "1"
-OrdinaryDiffEqStabilizedIRK = "1"
 OrdinaryDiffEqSSPRK = "1"
+OrdinaryDiffEqStabilizedIRK = "1"
 OrdinaryDiffEqStabilizedRK = "1"
 OrdinaryDiffEqSymplecticRK = "1"
 OrdinaryDiffEqTsit5 = "1"
